@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Dashboard</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="simple-grid.css" />
+</head>
+
+<body>
+    <h1 style="font-weight: 650;"> Hack Club @ GWAS Dashboard</h1>
+    
+    <h3>👋 Welcome to the hacker dashboard, what are you making today?</h3>
+    <hr />
+
+    <h2><span style="font-weight: 500;">Next meeting:</span> <span id="date"></span><span id="location"> in the Innovation Suite</span></h2>
+    <hr />
+
+    
+    <div id="news"></div>
+        <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h2 style="margin-block-start: 0em;">Key links:</h2>
+          <p><a href="https://repl.it/">Repl.it</a></p>
+          <p><a href="https://hack.af/pack">Hack Pack</a></p>
+          <p><a href="https://workshops.hackclub.com">Workshops</a></p>
+          <p><a href="https://hackclub.com/slack">Slack</a></p>
+          <p><a href="https://eventd.hackclub.com">Global Events</a></p>         
+        </div>
+        <div class="col-6">
+          <h2 style="margin-block-start: 0em;">Project submission:</h2>
+          <p>Coming Soon</p>
+        </div>
+      </div>
+    </div>
+    <p>
+        <img src="hackclub@gwas.png" width = "20%">
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="airtable.js"></script>
+    <script type="text/javascript" data-main="script" src="require.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+    
+</body>
+
+</html>
