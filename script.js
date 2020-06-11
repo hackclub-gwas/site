@@ -1,5 +1,5 @@
 var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'keyQ5gZeKjr3E1sMY'}).base('app0TvSfnuijGrvYV');
+var base = new Airtable({apiKey: 'nolooking'}).base('nolooking');
 
 base('Table 1').select({
     maxRecords: 1,

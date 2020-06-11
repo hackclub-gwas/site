@@ -6,7 +6,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+    <script>
+      new Darkmode().showWidget();
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="simple-grid.css" />
@@ -19,23 +22,30 @@
     <hr />
 
     <h2><span style="font-weight: 500;">Next meeting:</span> <span id="date"></span><span id="location"> in the Innovation Suite</span></h2>
-    <hr />
+    <hr style="margin-block-end: 1.5em;" />
 
     
-    <div id="news"></div>
+    <div id="main-stuff"></div>
         <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-3">
           <h2 style="margin-block-start: 0em;">Key links:</h2>
           <p><a href="https://repl.it/">Repl.it</a></p>
           <p><a href="https://hack.af/pack">Hack Pack</a></p>
-          <p><a href="https://workshops.hackclub.com">Workshops</a></p>
-          <p><a href="https://hackclub.com/slack">Slack</a></p>
-          <p><a href="https://eventd.hackclub.com">Global Events</a></p>         
+          <p style="margin-block-end: 1em;"><a href="https://workshops.hackclub.com">Workshops</a></p>  
+          <p style="margin-block-end: 1em;"><a href="https://open.spotify.com/playlist/2fddnU7I4qYwHpo6DrccMj?si=ENTwR_dzRnKSvH_58QmuGA">Spotify Playlist</a></p>     
         </div>
-        <div class="col-6">
+        <div class="col-3" style="margin-block-end: 1.5em;">
+          <h2 style="margin-block-start: 0em;" class ="hidden-sm">⠀</h2>
+          <p style="margin-block-start: 0em;"><a href="https://hackclub.com/slack" style="margin-block-start: 0em;">Slack</a></p>
+          <p><a href="https://events.hackclub.com">Global Events</a></p>    
+          <p><a href="https://hackclub.com/conduct/">Code of Conduct</a></p>     
+        </div>
+        <div class="col-6" >
           <h2 style="margin-block-start: 0em;">Project submission:</h2>
-          <p>Coming Soon</p>
+          <input type="text" id="lname" name="lastname" placeholder="Your name">
+          <input type="text" id="lname" name="lastname" placeholder="Link to project">
+          <input type="submit" value="Submit">
         </div>
       </div>
     </div>
