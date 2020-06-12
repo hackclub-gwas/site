@@ -29,21 +29,49 @@ a:hover {
 
 input[type=text], select {
   width: 100%;
-  padding: 12px 20px;
-  margin: 0px 0 8px 0;
+  padding: 0px 0px 12px 0px;
+  margin: 0px 0 20px 0;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 0px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px;
   box-sizing: border-box;
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #2277cb;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+input[type=text]:focus {
+    outline-width: 0;
 }
+
+.submit {
+  background-color: rgb(255,255,255);
+  padding: 6px;
+  margin: -12px 0 0px 0;
+  display: inline-block;
+  border: 1px;
+  border-radius: 1px;
+  box-sizing: border-box;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #2277cb;
+}
+
+.submit:hover {
+  background-color: rgb(243, 239, 239);
+}
+
+#everything {
+    filter: blur(2px);
+}
+
+.banner {
+    max-width: 50em;
+    position: absolute !important;
+    top: 20%!important;
+    margin: 0!important;
+    -ms-transform: translateY(-50%)!important;
+    transform: translateY(-50%)!important;
+    filter: blur(0px)!important;
+}
+

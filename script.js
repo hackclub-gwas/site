@@ -1,35 +1,27 @@
-var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'nolooking'}).base('nolooking');
-
-base('Table 1').select({
-    maxRecords: 1,
-    view: "Grid view"
-}).eachPage(function page(records, fetchNextPage) {
-    records.forEach(function(record) {
-        var currentDate = new Date()
-        console.log(currentDate)
-        var dateString = currentDate
-            .toString()
-            .split(' ')
-            .splice(0, 4)
-            .join(' ')
-        var nextMeeting = record.get('Formatted');
-        console.log(String(nextMeeting), dateString)
-        if (String(nextMeeting) == dateString) {
-          $('#date').text("today at 3:45pm")
-        }
-        
-    });
-    
-    fetchNextPage();
-
-}, function done(err) {
-    if (err) { console.error(err); return; }
-});
-
-function loadDate() {
-    // 
-}
 
 
-loadDate()
+var getTime = new XMLHttpRequest();
+
+getTime.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    $('#date').text(this.responseText+' in the Innovation Suite');
+  }
+};
+  
+getTime.open("GET", "https://gwas-hackclub-api--sampoder.repl.co/time", true);
+
+getTime.send();
+
+var submitProject = new XMLHttpRequest();
+
+getTime.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    $('#date').text(this.responseText+' in the Innovation Suite');
+  }
+};
+  
+getTime.open("GET", "https://gwas-hackclub-api--sampoder.repl.co/time", true);
+
+getTime.send();
+
+
